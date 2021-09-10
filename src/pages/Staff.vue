@@ -61,16 +61,17 @@ import { useI18n } from 'vue-i18n'
 interface JoinUs {
   title: string;
   desc: string;
+  locale: string;
 }
 
 export default defineComponent({
   name: 'Staff',
   setup () {
     const { t, locale } = useI18n()
-    let joinus = ref<JoinUs>({})
+    const joinus = ref<JoinUs>({})
 
     watch(locale, async () => {
-        joinus = {
+        joinus.value = {
           title: t(`staff.intro['title']`),
           desc: markdown(t(`staff.intro['desc']`))
         }
