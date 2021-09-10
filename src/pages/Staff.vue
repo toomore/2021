@@ -29,7 +29,7 @@
               <div class="staff-avatar-container">
                 <img
                   class="staff-avatar"
-                  :src="`https://www.gravatar.com/avatar/${staff.email_hash}?s=320&d=identicon&r=g`"
+                  :src="`https://www.gravatar.com/avatar/${staff.email_hash}?s=320&d=identicon&r=g&d=https://volunteer.coscup.org/img/nonavatar.png`"
                   :alt="`${staff.name}'s Avatar`"
                 />
               </div>
