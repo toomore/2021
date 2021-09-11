@@ -45,13 +45,25 @@
         font-weight: 700;
       }
 
+      .contacts {
+        display: inline-block;
+        .contact {
+          text-align: center;
+          padding: 0.5rem 1rem;
+          .subtitle {
+              font-weight: bold;
+              padding-bottom: 0.25rem;
+          }
+        }
+      }
+
       .content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 1rem 2rem;
 
-        &.past {
+        &.past, &.contact {
           max-width: 700px;
         }
 
