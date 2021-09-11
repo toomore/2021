@@ -61,7 +61,6 @@ import { useI18n } from 'vue-i18n'
 interface JoinUs {
   title: string;
   desc: string;
-  locale: string;
 }
 
 export default defineComponent({
