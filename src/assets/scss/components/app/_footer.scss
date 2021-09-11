@@ -54,6 +54,13 @@
               font-weight: bold;
               padding-bottom: 0.25rem;
           }
+          a {
+            color: var(--color-text);
+          }
+          &:hover {
+            color: var(--color-text-hover);
+            transition: color 0.1s;
+          }
         }
       }
 
